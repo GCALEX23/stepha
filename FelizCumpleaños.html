@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>STEPH</title>
+</head>
+  <style>
+
+    body{
+      margin:0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0b1522;
+    }
+    .heart{
+      height: 400px;
+      width: 400px;
+      background-color: #f20044;
+      vertical-align: text-bottom;
+      transform: rotate(45deg);
+      box-shadow: -20px 20px 400px #f20044;
+      animation: palpitar 0.5s linear infinite alternate;
+    }
+    img{
+      height: 125px;
+      width: 100px;
+      position: heart;
+    }
+    .contenido{
+      position: fixed;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    h1{
+      color: white;
+      vertical-align: heart;
+    }
+     p{
+      color: white;
+      vertical-align: heart;
+     }
+    @keyframes palpitar{
+      0%{transform:rotate(45deg)scale(1.10);}
+      80%{transform: rotate(45deg)scale(1.0);}
+      100%{transform: rotate(45deg)scale(0.8);}
+    }
+    .heart::before{
+      content: "";
+      position: absolute;
+      height: 400px;
+      width: 400px;
+      background-color: #f20044;
+      right: 50%;
+      border-radius: 50%;
+      box-shadow: 20px 20px 400px #f20044;
+        }
+        .heart::after{
+      content: "";
+      position: absolute;
+      height: 400px;
+      width: 400px;
+      background-color: #f20044;
+      top: -50%;
+      border-radius: 50%;
+      box-shadow: 20px 20px 400px #f20044;
+        }
+  </style>
+<body>
+  <div class="heart"></div>
+  <div class="contenido"><h1>FELIZ CUMPLEAÑOS</h1>
+    <p> Estas son las mañanitas que cantaba el Rey David a las muchachas bonitas se las cantamos así …. </p>  
+    <p>Despierta mi niña despierta mira que ya amaneció ya los pajaritos cantan la luna ya se metió (tos )(tos) * </p>
+    <p>¡Feliz Cumpleaños a mi rayito de Sol 💕🥳</p>
+    <p>Le damos gracias a Dios de tener la bendición que estes con nosotros un año más, </p>
+    <p>Quiero brindarte mis mejores deseos y que la pases feliz a lado de tus seres queridos 🎉✨</p>
+    <p>te deseo lo mejor siempre Stepsita💗  te quiero muchísimo</p>
+<img src="Foto.jpg" style="width:200px" > 
+</div>
+</body>
+</html>
